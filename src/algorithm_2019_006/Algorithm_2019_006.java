@@ -50,7 +50,7 @@ public class Algorithm_2019_006 {
                     + "\t18.Fibonacci Numbers\n"
                     + "\t19.Recurrence");
             System.out.print("Enter your choice--> ");
-            int c1 = s.nextInt();
+            int c1 = s.nextInt(); // to input
 
             switch (c1) {
                 case 1:
