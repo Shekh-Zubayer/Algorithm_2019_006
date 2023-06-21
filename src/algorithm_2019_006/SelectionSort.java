@@ -11,28 +11,29 @@ import java.util.Scanner;
  *
  * @author 21 Technology
  */
-class InsertionSort {
+class SelectionSort {
     
     Scanner s = new Scanner(System.in);
     
-    public void insertion_sort(){
+    public void selection_sort(){
         Input in = new Input();
         int list[] = in.list_input();
 
         int n = list.length;
-        for (int i = 1; i < n; ++i) {
+        for (int i = 0; i < n-1; i++)
+        {
             System.out.print("\nPass "+i+"->");
-            int key = list[i];
-            int j = i - 1;
+            // Find the minimum element in unsorted array
+            int min_idx = i;
+            for (int j = i+1; j < n; j++)
+                if (list[j] < list[min_idx])
+                    min_idx = j;
  
-            /* Move elements of arr[0..i-1], that are
-               greater than key, to one position ahead
-               of their current position */
-            while (j >= 0 && list[j] > key) {
-                list[j + 1] = list[j];
-                j = j - 1;
-            }
-            list[j + 1] = key;
+            // Swap the found minimum element with the first
+            // element
+            int temp = list[min_idx];
+            list[min_idx] = list[i];
+            list[i] = temp;
             for(int k=0; k<n;k++){
                     System.out.print(list[k]+" ");
             }
@@ -41,6 +42,7 @@ class InsertionSort {
         for (int i = 0; i < n; i++) {
             System.out.print(list[i] + " ");
         }
+        
     }
     
 }

@@ -67,6 +67,8 @@ public class Algorithm_2019_006 {
                         is.insertion_sort();
                         break;
                     case 3:
+                        SelectionSort ss = new SelectionSort();
+                        ss.selection_sort();
                         break;
                     case 4:
                         break;
@@ -144,6 +146,8 @@ public class Algorithm_2019_006 {
                     case 4:
                         break;
                     case 5:
+                        Bfs bfs = new Bfs();
+                        bfs.b_f_s();
                         break;
                     case 6:
                         break;
