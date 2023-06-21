@@ -21,7 +21,7 @@ class Bfs {
         System.out.print("\nEnter number of edges-->");
         int c = s.nextInt();
         Graph g = new Graph(a);
-        for (int i=0;i<c;i++){
+        for (int i = 0; i < c; i++) {
             System.out.print("\nEnter edges-->");
             g.addEdge(s.nextInt(), s.nextInt());
         }

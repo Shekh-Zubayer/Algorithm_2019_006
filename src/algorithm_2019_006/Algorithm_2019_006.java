@@ -138,8 +138,12 @@ public class Algorithm_2019_006 {
 
                 switch (c1) {
                     case 1:
+                        LCS lcs = new LCS();
+                        lcs.run();
                         break;
                     case 2:
+                        OBST obst = new OBST();
+                        obst.run();
                         break;
                     case 3:
                         break;
@@ -150,24 +154,47 @@ public class Algorithm_2019_006 {
                         bfs.b_f_s();
                         break;
                     case 6:
+                        Dfs dfs = new Dfs();
+                        dfs.d_f_s();
                         break;
                     case 7:
                         break;
                     case 8:
+                        LIS lis = new LIS();
+                        lis.run();
                         break;
                     case 9:
+                        TopologicalSort ts = new TopologicalSort();
+                        ts.topological_sort();
                         break;
                     case 10:
+                        Krushkal krushkal = new Krushkal();
+                        krushkal.run();
                         break;
                     case 11:
+                        Prims prims = new Prims();
+                        prims.run();
                         break;
                     case 12:
+                        Dijkstra dijkstra = new Dijkstra(5);
+                        dijkstra.run();
                         break;
                     case 13:
+                        BellmanFord bf = new BellmanFord();
+                        bf.run();
                         break;
                     case 14:
+                        int INF = 99999;
+                        Warshall warshall = new Warshall();
+                        int graph[][] = {{0, 5, INF, 10},
+                        {INF, 0, 3, INF},
+                        {INF, INF, 0, 1},
+                        {INF, INF, INF, 0}};
+                        warshall.run(graph);
                         break;
                     case 15:
+                        KnapSack ks = new KnapSack();
+                        ks.runKnapSack();
                         break;
                     case 16:
                         break;
@@ -186,9 +213,9 @@ public class Algorithm_2019_006 {
                         break;
                 }
 
-            }else if(choice == 3){
+            } else if (choice == 3) {
                 exit(0);
-            }else {
+            } else {
                 System.out.println("Invalid Input");
             }
         }
