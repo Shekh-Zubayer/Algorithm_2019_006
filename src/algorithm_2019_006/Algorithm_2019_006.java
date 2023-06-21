@@ -22,11 +22,11 @@ public class Algorithm_2019_006 {
         while (true) {
 
             Scanner s = new Scanner(System.in);
-            System.out.println("================ (Algorithm) ===============");
+            System.out.println("\n================ (Algorithm) ===============");
             System.out.println(""
-                    + "\t1) Data Structure \n"
-                    + "\t2) Algorithms"
-                    + "\t3) exit");
+                    + "\t1.Data Structure\n"
+                    + "\t2.Algorithms\n"
+                    + "\t3.Exit");
             System.out.print("Enter your choice:> ");
             int choice = s.nextInt();
             System.out.println("============================================");
@@ -45,14 +45,15 @@ public class Algorithm_2019_006 {
                         + "\t09.Bin sort\n"
                         + "\t10.Shell sort\n"
                         + "\t11.Linear search\n"
-                        + "\t12.Bimary search\n"
+                        + "\t12.Binary search\n"
                         + "\t13.Euclidean GCD Algorithm\n"
                         + "\t14.Universal hashing\n"
                         + "\t15.Stack\n"
                         + "\t16.Queue\n"
                         + "\t17.Linked List\n"
                         + "\t18.Fibonacci Numbers\n"
-                        + "\t19.Recurrence");
+                        + "\t19.Recurrence\n"
+                        + "\t20.Exit");
                 System.out.print("Enter your choice--> ");
                 int c1 = s.nextInt(); // to input
 
@@ -62,6 +63,8 @@ public class Algorithm_2019_006 {
                         b.bubble_sort();
                         break;
                     case 2:
+                        InsertionSort is = new InsertionSort();
+                        is.insertion_sort();
                         break;
                     case 3:
                         break;
@@ -97,7 +100,10 @@ public class Algorithm_2019_006 {
                         break;
                     case 19:
                         break;
+                    case 20:
+                        exit(0);
                     default:
+                        System.out.println("Invalid Input");
                         break;
 
                 }
@@ -123,7 +129,8 @@ public class Algorithm_2019_006 {
                         + "\t17.Rabin krap string matching algorithm \n "
                         + "\t18.Activity selection problem \n "
                         + "\t19.Recurrence \n "
-                        + "\t20.Max flow min cut");
+                        + "\t20.Max flow min cut\n"
+                        + "\t21.Exit");
                 System.out.print("Enter your choice--> ");
                 int c1 = s.nextInt();
 
@@ -168,14 +175,17 @@ public class Algorithm_2019_006 {
                         break;
                     case 20:
                         break;
+                    case 21:
+                        exit(0);
                     default:
+                        System.out.println("Invalid Input");
                         break;
                 }
 
             }else if(choice == 3){
                 exit(0);
             }else {
-                System.out.println("Invalid");
+                System.out.println("Invalid Input");
             }
         }
 
