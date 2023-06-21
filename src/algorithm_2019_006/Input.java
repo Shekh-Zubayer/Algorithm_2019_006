@@ -27,4 +27,14 @@ public class Input {
         }
         return list;
     }
+    public int keyInput() {
+        System.out.print("Enter key value:> ");
+        return s.nextInt();
+
+    }
+    public int valueInput( String msg) {
+        System.out.print(msg);
+        return s.nextInt();
+
+    }
 }

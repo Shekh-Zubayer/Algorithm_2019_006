@@ -71,18 +71,28 @@ public class Algorithm_2019_006 {
                         ss.selection_sort();
                         break;
                     case 4:
+                        MergeSort ms = new MergeSort ();
+                        ms.mergeSort();
                         break;
                     case 5:
+                        QuickSort qs = new QuickSort();
+                        qs.quickSort();
                         break;
                     case 6:
                         break;
                     case 7:
                         break;
                     case 8:
+                        HeapSort hs = new HeapSort ();
+                        hs.heapSort();
                         break;
                     case 9:
+                        BinSort bin = new BinSort ();
+                        bin.binSort();
                         break;
                     case 10:
+                        ShellSort sss = new ShellSort();
+                        sss.run();
                         break;
                     case 11:
                         break;

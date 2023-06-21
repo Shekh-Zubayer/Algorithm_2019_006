@@ -1,4 +1,4 @@
-package ds.sort;
+package algorithm_2019_006;
 
 import java.util.Collections;
 import java.util.Vector;

@@ -1,4 +1,4 @@
-package ds.sort;
+package algorithm_2019_006;
 
 public class MergeSort {
 
